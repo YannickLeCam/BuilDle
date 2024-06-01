@@ -49,6 +49,9 @@ nav {
     height: 5vh;
     justify-content: space-around;
     align-items: center;
+    margin: 0 10%;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 header ul {
@@ -78,13 +81,14 @@ header a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    background-color: rgba(50, 43, 75,0.7);
+    background-color: rgba(50, 43, 75,0.5);
+    font-weight: 600;
     font-size: larger;
     transition: 1s;
 }
 
 header li:hover a {
-    background-color: rgba(50, 43, 75,1);
+    background-color: rgba(50, 43, 75,0.7);
     font-size: x-large;
     transition: 1s;
 }
@@ -161,3 +165,13 @@ PARTIE CARDS
     transition: 1s;
 }
 
+
+@media only screen and (max-width: 850px) {
+    #cards{
+        flex-direction: column;
+        margin: 3%;
+    }
+    .card{
+        margin:5%;
+    }
+  }
