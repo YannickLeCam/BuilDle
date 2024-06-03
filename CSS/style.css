@@ -1,3 +1,10 @@
+:root{
+    --bg-color:rgba(14,27,24,0.7);
+    --bg-color-hover:rgba(14,27,24,0.9);
+    --title:#d3a33b;
+    --p:white;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -79,16 +86,16 @@ header a {
     align-items: center;
     height: 100%;
     text-decoration: none;
-    color: white;
+    color: var(--title);
     text-transform: uppercase;
-    background-color: rgba(50, 43, 75,0.5);
+    background-color: var(--bg-color);
     font-weight: 600;
     font-size: larger;
     transition: 1s;
 }
 
 header li:hover a {
-    background-color: rgba(50, 43, 75,0.7);
+    background-color: var(--bg-color-hover);
     font-size: x-large;
     transition: 1s;
 }
@@ -102,8 +109,8 @@ PARTIE CARDS
 #cards {
     display: flex;
     flex-direction: row;
-    margin: 5%;
-    gap: 5%;
+    margin: 5% 15%;
+    gap: 10%;
     
 }
 
@@ -114,12 +121,12 @@ PARTIE CARDS
     justify-content: center;
     overflow: hidden;
     border-radius: 12px;
-    background-color: rgba(50, 43, 75,0.7);
+    background-color: var(--bg-color);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transition: 1s;
 }
 .card_content{
-    color: white;
+    color: var(--p);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,6 +135,7 @@ PARTIE CARDS
 }
 
 .card_content h1{
+    color: var(--title);
     font-family: "Teko", sans-serif;
     margin-bottom: 5%;
     text-transform: uppercase;
@@ -144,11 +152,12 @@ PARTIE CARDS
     border-radius: 12px;
     width: 60%;
     height: 30px;
-    background-color: rgb(150, 150, 150) ;
-    color: rgb(50, 43, 75);
+    background-color: var(--title) ;
+    filter: brightness(0.8);
+    color: var(--bg-color);
     font-weight: 600;
     font-size: larger;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .card_header img{
@@ -156,13 +165,13 @@ PARTIE CARDS
 }
 
 .card:hover {
-    background-color: rgba(50, 43, 75,0.9);
+    background-color: var(--bg-color-hover);
     transition: 1s;
 }
 
 .card button:hover{
     scale: 1.1;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 
