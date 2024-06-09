@@ -38,14 +38,14 @@ header{
 }
 
 header figure {
-    max-height: 20vh;
+    max-height: 25vh;
     display: flex;
     align-items: center; 
     justify-content: center;
 }
 
 header figure img {
-    max-height: 20vh;
+    max-height: 25vh;
 }
 
 nav {
